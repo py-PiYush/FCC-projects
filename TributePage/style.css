@@ -1,0 +1,24 @@
+#main{
+    background-color: whitesmoke;
+}
+h1{
+    text-align: center;
+}
+#img-div{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width:90vw;
+    background-color: white;
+    margin: auto;
+    align-items: center;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
+#tribute-link{
+    text-align: center;
+}
+
