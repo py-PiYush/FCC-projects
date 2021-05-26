@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FCC: Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="title">Course Survey Form</h1>
+        <p id="description">Fill the form to give feedback about the course</p>
+    </header>
+    <main>
+        <div class="container">
+            <form id="survey-form">
+                <div class="form-group">
+                    <label id="name-label" for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter Your Name" required />
+
+                </div>
+                <div class="form-group">
+                    <label id="email-label" for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter Your E-Mail" required />
+
+                </div>
+                <div class="form-group">
+                    <label id="rollnumber-label" for="roll-number">Roll Number</label>
+                    <input type="text" id="roll-number" name="roll-number" placeholder="Enter Your Roll Number"
+                        required />
+
+                </div>
+                <div class="form-group">
+                    <label id="number-label" for="grade">Grade in the course <span
+                            class="clue">(optional)</span></label>
+                    <input type="number" id="number" name="number" min="4" max="10" placeholder="Grade point(4-10)" />
+
+                </div>
+                <div class="form-group">
+                    <label id="dropdown-label" for="role">Current Role</label>
+                    <select id="dropdown" name="role" required>
+                        <option disabled selected value> Select current role</option>
+                        <option value="student">Student</option>
+                        <option value="teaching-assistant">Teaching Assistant</option>
+                        <option value="instructor">Course Instructor</option>
+                        <option value="faculty">Faculty</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <p>
+                        Lectures and topics covered under this course was valuable.
+                    </p>
+                    <label>
+                        <input name="feedback" type="radio" value="strongly-agree" class="input-radio">Strongly
+                        Agree</label>
+                    <label><input name="feedback" type="radio" value="agree" class="input-radio">Agree</label>
+                    <label><input name="feedback" type="radio" value="neutral" class="input-radio">Neutral</label>
+                    <label><input name="feedback" type="radio" value="disagree" class="input-radio">Disagree</label>
+                    <label><input name="feedback" type="radio" value="strongly-disagree" class="input-radio">Strongly
+                        Disagree</label>
+
+                </div>
+                <div class="form-group">
+                    <p>
+                        What would you like to see improved?
+                        <span class="clue">(Check all that apply)</span>
+                    </p>
+
+                    <label><input name="prefer" value="course-content" type="checkbox"
+                            class="input-checkbox" />Course Content</label>
+                    <label>
+                        <input name="prefer" value="evaluation-pattern" type="checkbox" class="input-checkbox" />Evaluation Pattern</label>
+                    <label><input name="prefer" value="data-visualization" type="checkbox" class="input-checkbox" />Data
+                        Visualization</label>
+                    <label><input name="prefer" value="timings" type="checkbox"
+                            class="input-checkbox" />Lecture Timings</label>
+                </div>
+                <div class="form-group">
+                    <p>Any comments or suggestions?</p>
+                    <textarea name="comments" id="comments" class="input-textarea"
+                        placeholder="Enter your comments here..."></textarea>
+                </div>
+               
+                    <div class="form-group">
+                        <button type="submit" id="submit">Submit</button>
+                    </div>
+
+                </div>
+
+            </form>
+        </div>
+    </main>
+    <footer></footer>
+
+</body>
+
+</html>
